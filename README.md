@@ -4,6 +4,7 @@
 **Materia:** Seguridad de Redes  
 **Fecha:** 31/05/2026  
 
+[Ver demostración en YouTube](https://youtu.be/NvZqfwklTWI)
 ---
 
 ## Objetivo del Laboratorio
@@ -57,7 +58,8 @@ disponibles en el pool 172.25.78.50-100.
 ## Documentación de la Red
 
 ### Topología
-> 📸 **[INSERTAR CAPTURA DE LA TOPOLOGÍA EN EVE-NG]**
+> <img width="705" height="617" alt="image" src="https://github.com/user-attachments/assets/08a15efd-a611-4c3e-98b3-eaf35f21f5ab" />
+
 
 ### Direccionamiento IP
 | Dispositivo | Interfaz | Dirección IP | Máscara | Rol |
@@ -90,20 +92,21 @@ disponibles en el pool 172.25.78.50-100.
 
 ## Capturas de Pantalla
 
-### Topología del laboratorio
-> 📸 **[INSERTAR CAPTURA DE LA TOPOLOGÍA]**
-
 ### Pool DHCP antes del ataque
-> 📸 **[INSERTAR CAPTURA DE: show ip dhcp pool en R1]**
+> <img width="933" height="286" alt="image" src="https://github.com/user-attachments/assets/f0d3e1c4-5016-4df9-a934-42912c36c4d8" />
+
 
 ### Ejecución del script
-> 📸 **[INSERTAR CAPTURA DEL SCRIPT CORRIENDO EN KALI]**
+> <img width="936" height="723" alt="image" src="https://github.com/user-attachments/assets/292afacf-11ac-44c1-8257-1091a65dca53" />
+
 
 ### Pool DHCP agotado
-> 📸 **[INSERTAR CAPTURA DE: show ip dhcp binding en R1 con pool lleno]**
+> <img width="944" height="388" alt="image" src="https://github.com/user-attachments/assets/18240f8a-a149-49ac-8d3b-266520bd65a3" />
+
 
 ### PC2 sin poder obtener IP
-> 📸 **[INSERTAR CAPTURA DE: dhcp en PC2 sin respuesta]**
+> <img width="967" height="611" alt="image" src="https://github.com/user-attachments/assets/0fca875d-752b-46a8-a3ab-50c3f3dc18d3" />
+
 
 ---
 
@@ -119,11 +122,6 @@ interface ethernet 0/1
  ip dhcp snooping limit rate 10
 ```
 
-### Verificación
-> 📸 **[INSERTAR CAPTURA DE: show ip dhcp snooping en SW1]**
-
 ### Resultado
 DHCP Snooping limita la cantidad de solicitudes DHCP por puerto, 
 bloqueando el ataque de agotamiento.
-
-> 📸 **[INSERTAR CAPTURA DEL SCRIPT CORRIENDO CON CONTRAMEDIDA ACTIVA]**
